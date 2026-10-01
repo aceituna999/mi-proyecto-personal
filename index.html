@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>Mi Proyecto Personal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <div class="eyebrow">MI PROYECTO PERSONAL</div>
+    <h1 id="greeting">Buenos días 👋</h1>
+    <p id="today"></p>
+  </div>
+  <button class="icon-btn" onclick="resetToday()" title="Reiniciar datos de hoy">↻</button>
+</header>
+
+<main class="container">
+  <section class="hero-card">
+    <div class="hero-head"><span>🎯 Progreso de hoy</span><strong id="progressText">0%</strong></div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <div class="stats-grid">
+      <div class="stat"><span>⚖️ Peso</span><b id="weightStat">89.0 kg</b></div>
+      <div class="stat"><span>💧 Agua</span><b id="waterStat">0 / 3.0 L</b></div>
+      <div class="stat"><span>😴 Sueño</span><b id="sleepStat">—</b></div>
+      <div class="stat"><span>🏋️ Entreno</span><b id="workoutStat">Pendiente</b></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-title"><h2>📋 Hábitos de hoy</h2><span id="habitCount">0/6</span></div>
+    <div id="habits"></div>
+  </section>
+
+  <section class="quick-grid">
+    <a class="quick-card" href="alimentacion.html"><span>🥗</span><b>Alimentación</b><small>3 comidas · déficit</small></a>
+    <a class="quick-card" href="ejercicio.html"><span>🏋️</span><b>Entrenamiento</b><small id="quickWorkout">Rutina de hoy</small></a>
+    <a class="quick-card" href="sueno.html"><span>😴</span><b>Sueño</b><small>10:30 pm · 6:00 am</small></a>
+    <a class="quick-card" href="hidratacion.html"><span>💧</span><b>Hidratación</b><small>Meta 3.0 L</small></a>
+    <a class="quick-card" href="progreso.html"><span>📊</span><b>Progreso</b><small>Peso · cintura · hábitos</small></a>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <a class="active" href="index.html">🏠<span>Inicio</span></a>
+  <a href="alimentacion.html">🥗<span>Plan</span></a>
+  <a href="ejercicio.html">🏋️<span>Entreno</span></a>
+  <a href="progreso.html">📊<span>Progreso</span></a>
+  <a href="sueno.html">😴<span>Sueño</span></a>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>
